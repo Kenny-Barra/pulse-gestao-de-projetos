@@ -468,6 +468,28 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
+
+  /* ── mvp ── */
+  .mvp-note { font-family: var(--ui); font-size: 11.5px; line-height: 1.5; color: var(--ink-2); margin: 0 0 10px; }
+  .mvp-out { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+  .mvp-out li { font-family: var(--ui); font-size: 12px; line-height: 1.4; color: var(--ink-2); padding-left: 16px; position: relative; }
+  .mvp-out li::before { content: "×"; position: absolute; left: 0; top: -1px; color: var(--crit); font-weight: 700; }
+  .gate-ref { font-family: var(--mono); font-size: 10px; color: var(--accent); background: var(--accent-soft); padding: 2px 6px; margin-left: 6px; letter-spacing: .04em; text-transform: none; }
+  table.mvp-crit { min-width: 0; }
+  table.mvp-crit td { font-size: 12px; padding: 6px 0; border-bottom: 1px solid var(--line-soft); color: var(--ink-2); }
+  table.mvp-crit td.meta { text-align: right; font-family: var(--mono); font-weight: 700; color: var(--accent); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  table.mvp-crit tr:last-child td { border-bottom: 0; }
+  .pri { font-family: var(--ui); font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; white-space: nowrap; }
+  .pri-must   { background: var(--crit-bg); color: var(--crit); }
+  .pri-should { background: var(--med-bg);  color: var(--med);  }
+  .pri-out    { background: var(--surface-2); color: var(--ink-3); border: 1px solid var(--line); }
+  td.rice { font-family: var(--mono); font-weight: 700; color: var(--accent); }
+  tr.adiado td.risco, tr.adiado td.rice { opacity: .72; }
+  .mvp-foot { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; background: var(--surface); border: 1px solid var(--line); padding: 18px 20px; box-shadow: var(--shadow); }
+  @media (max-width: 820px) { .mvp-foot { grid-template-columns: 1fr; } }
+  .mvp-foot > div > b { display: block; font-family: var(--ui); font-size: 10.5px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  .mvp-foot span b { display: inline; font-size: inherit; letter-spacing: normal; text-transform: none; color: var(--ink); margin: 0; }
+  .mvp-foot span { font-family: var(--ui); font-size: 12px; line-height: 1.5; color: var(--ink-2); }
 </style>
 
 <header class="masthead">
@@ -478,7 +500,7 @@
         <h1 class="mast-title">Pulse<span>.</span></h1>
         <p class="mast-sub">
           Plataforma de inteligência de atendimento com IA generativa. Reúne os três artefatos de
-          gestão do projeto: canvas de visão, roadmap por fases e matriz de riscos.
+          gestão do projeto: canvas de visão, documento de MVP, roadmap por fases e matriz de riscos.
         </p>
       </div>
       <div class="mast-meta">
@@ -497,9 +519,10 @@
   <div class="wrap">
     <div class="nav-inner">
       <a href="#canvas"><i>01</i>Canvas de Visão</a>
-      <a href="#roadmap"><i>02</i>Roadmap</a>
-      <a href="#riscos"><i>03</i>Matriz de Riscos</a>
-      <a href="#norte"><i>04</i>Norte Estratégico</a>
+      <a href="#mvp"><i>02</i>Documento de MVP</a>
+      <a href="#roadmap"><i>03</i>Roadmap</a>
+      <a href="#riscos"><i>04</i>Matriz de Riscos</a>
+      <a href="#norte"><i>05</i>Norte Estratégico</a>
     </div>
   </div>
 </nav>
@@ -621,11 +644,200 @@
   </div>
 </section>
 
-<!-- ══════════════ 02 · ROADMAP ══════════════ -->
-<section id="roadmap">
+<!-- ══════════════ 02 · MVP ══════════════ -->
+<section id="mvp">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Artefato 02</div>
+      <h2>Documento de MVP</h2>
+      <p>
+        O MVP existe para responder <b>uma única pergunta</b>: um líder de CX confia no ranking
+        automático de temas a ponto de decidir sem reler os tickets? Tudo que não ajudava a responder
+        isso ficou de fora, e está listado como escopo negativo.
+      </p>
+    </div>
+
+    <div class="risk-layout">
+
+      <div class="risk-top">
+        <div class="heat-card">
+          <h3>Escopo negativo</h3>
+          <p class="mvp-note">O que o MVP <b>não</b> faz. Declarar isso é a trava formal contra a inflação de escopo (risco R13).</p>
+          <ul class="mvp-out">
+            <li>Não responde nem redige tickets</li>
+            <li>Não avalia desempenho individual de atendentes <i>(restrição ética permanente)</i></li>
+            <li>Não escreve de volta no <i>helpdesk</i></li>
+            <li>Não processa áudio nem ligações</li>
+            <li>Sem SSO corporativo, app mobile ou API pública</li>
+            <li>Sem previsão de churn ou causa-raiz automática</li>
+          </ul>
+        </div>
+
+        <div class="legend-card">
+          <h3>Critérios de sucesso <span class="gate-ref">gate G2</span></h3>
+          <table class="mvp-crit">
+            <tbody>
+              <tr><td>Precisão da classificação</td><td class="meta">≥ 80%</td></tr>
+              <tr><td>Temas úteis entre os 5 principais</td><td class="meta">4 de 5</td></tr>
+              <tr><td>Tempo até o primeiro insight</td><td class="meta">&lt; 30 min</td></tr>
+              <tr><td>Planos de ação executados por piloto/mês</td><td class="meta">≥ 3</td></tr>
+              <tr><td>Retenção semanal do usuário primário (W4)</td><td class="meta">≥ 60%</td></tr>
+              <tr><td>Custo de inferência por 1.000 tickets</td><td class="meta">≤ R$ 25</td></tr>
+              <tr><td>Pilotos com intenção de compra</td><td class="meta">2 de 3</td></tr>
+            </tbody>
+          </table>
+          <p class="mvp-note" style="margin-top:10px;">
+            <b>Regra de decisão:</b> precisão entre 60% e 80% manda iterar. Abaixo de 60%, pivotar a
+            abordagem técnica. Precisão alta com zero ação executada significa que o problema é de
+            valor, e o time volta para a descoberta.
+          </p>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Funcionalidade</th>
+              <th>Prioridade</th>
+              <th>RICE</th>
+              <th>Esforço</th>
+              <th>Critério de aceitação principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="sev-crit">
+              <td class="id">F5</td>
+              <td class="risco">Evidência rastreável</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">112,5</td>
+              <td class="num">2 sem</td>
+              <td>Todo tema exibe de 3 a 5 citações literais dos tickets originais, com link para a fonte. Sem evidência suficiente, o tema é marcado como baixa confiança e não entra no resumo executivo.</td>
+            </tr>
+            <tr class="sev-crit">
+              <td class="id">F2</td>
+              <td class="risco">Normalização e anonimização de PII</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">95,0</td>
+              <td class="num">2 sem</td>
+              <td>CPF, e-mail, telefone e cartão são mascarados antes de qualquer chamada ao LLM, com recall ≥ 98%. Se o sanitizador falhar, o comportamento padrão é bloquear.</td>
+            </tr>
+            <tr class="sev-crit">
+              <td class="id">F4</td>
+              <td class="risco">Painel de temas priorizados</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">90,0</td>
+              <td class="num">3 sem</td>
+              <td>Ranking calculado por volume × tendência × sentimento, com a fórmula visível ao usuário. Carrega em menos de 3 segundos para bases de até 100.000 tickets.</td>
+            </tr>
+            <tr class="sev-crit">
+              <td class="id">F7</td>
+              <td class="risco">Feedback do usuário sobre o tema</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">89,3</td>
+              <td class="num">1 sem</td>
+              <td>Cada tema oferece "tema correto", "tema incorreto" e "mesclar com". Temas mesclados permanecem unificados nos processamentos seguintes.</td>
+            </tr>
+            <tr class="sev-crit">
+              <td class="id">F6</td>
+              <td class="risco">Resumo executivo semanal</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">64,0</td>
+              <td class="num">3 sem</td>
+              <td>Enviado toda segunda às 8h, com no máximo 5 temas. Cada ação sugerida é específica e executável, nunca genérica. Todo conteúdo gerado por IA é rotulado como tal.</td>
+            </tr>
+            <tr class="sev-crit">
+              <td class="id">F1</td>
+              <td class="risco">Ingestão de dados</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">63,3</td>
+              <td class="num">3 sem</td>
+              <td>Upload de CSV com validação de esquema e conector Zendesk somente leitura. Processa até 50.000 registros sem falhar e retoma importação interrompida sem duplicar.</td>
+            </tr>
+            <tr class="sev-crit">
+              <td class="id">F3</td>
+              <td class="risco">Clusterização automática de temas</td>
+              <td><span class="pri pri-must">Must</span></td>
+              <td class="num rice">35,0</td>
+              <td class="num">6 sem</td>
+              <td>Gera de 8 a 30 temas a partir de 10.000 tickets, sem taxonomia prévia, com precisão ≥ 80% validada por especialista. Não classificados não passam de 15%.</td>
+            </tr>
+            <tr class="sev-med">
+              <td class="id">F8</td>
+              <td class="risco">Exportação e compartilhamento</td>
+              <td><span class="pri pri-should">Should</span></td>
+              <td class="num rice">54,0</td>
+              <td class="num">1 sem</td>
+              <td>Exportação do painel em PDF e dos temas em CSV, mais envio do resumo para um canal do Slack via webhook configurável.</td>
+            </tr>
+            <tr class="sev-low adiado">
+              <td class="id">F9</td>
+              <td class="risco">Alertas de anomalia</td>
+              <td><span class="pri pri-out">Could</span></td>
+              <td class="num rice">15,0</td>
+              <td class="num">Fase 2</td>
+              <td>Adiado por dependência, não por falta de valor. Detectar anomalia exige baseline histórico que só existe depois de meses de uso.</td>
+            </tr>
+            <tr class="sev-low adiado">
+              <td class="id">F10</td>
+              <td class="risco">Chat conversacional com os dados</td>
+              <td><span class="pri pri-out">Won't</span></td>
+              <td class="num rice">3,0</td>
+              <td class="num">Fase 3</td>
+              <td>Adiado por disciplina. É o que mais impressiona em demonstração e o que menos resolve o problema declarado pelo cliente, que é priorização e não consulta.</td>
+            </tr>
+            <tr class="sev-low adiado">
+              <td class="id">F11</td>
+              <td class="risco">Previsão de churn por tema</td>
+              <td><span class="pri pri-out">Won't</span></td>
+              <td class="num rice">n/d</td>
+              <td class="num">Fase 3</td>
+              <td>Exige dado de cancelamento e histórico longo, ainda indisponíveis no piloto.</td>
+            </tr>
+            <tr class="sev-low adiado">
+              <td class="id">F13</td>
+              <td class="risco">SSO/SAML e auditoria corporativa</td>
+              <td><span class="pri pri-out">Won't</span></td>
+              <td class="num rice">n/d</td>
+              <td class="num">Fase 3</td>
+              <td>Exigência de contas enterprise, ausentes no programa de pilotos.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mvp-foot">
+        <div>
+          <b>Como foi priorizado</b>
+          <span><b>MoSCoW</b> para o corte de escopo e <b>RICE</b> para ordenar dentro do essencial.
+          O resultado trouxe uma inversão: a maior pontuação não ficou com a inteligência artificial.
+          Ficou com a evidência rastreável, que é barata de construir e protege todo o resto do
+          produto contra o risco de alucinação.</span>
+        </div>
+        <div>
+          <b>Capacidade e reserva</b>
+          <span>7 funcionalidades <i>Must</i> somam 20 semanas/dev, mais 1 semana da <i>Should</i>.
+          A Fase 1 tem 3 desenvolvedores por 8 semanas, ou seja 24 semanas/dev. As <b>3 semanas
+          restantes (12,5%)</b> ficam como reserva de contingência para os riscos R01 e R06.</span>
+        </div>
+        <div>
+          <b>Definição de pronto</b>
+          <span>Para funcionalidade de IA, o <i>Definition of Done</i> exige <b>métrica de qualidade
+          medida</b> contra conjunto de teste rotulado, além do custo de inferência aferido. Não
+          basta estar em produção.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 03 · ROADMAP ══════════════ -->
+<section id="roadmap">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Artefato 03</div>
       <h2>Roadmap do Produto</h2>
       <p>
         Roadmap orientado a hipóteses. Cada fase existe para derrubar <b>um risco específico</b>, em vez
@@ -796,11 +1008,11 @@
   </div>
 </section>
 
-<!-- ══════════════ 03 · RISCOS ══════════════ -->
+<!-- ══════════════ 04 · RISCOS ══════════════ -->
 <section id="riscos">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Artefato 03</div>
+      <div class="eyebrow">Artefato 04</div>
       <h2>Matriz de Riscos</h2>
       <p>
         15 riscos mapeados pela análise qualitativa do PMI. <b>Exposição = probabilidade × impacto.</b>
@@ -1013,11 +1225,11 @@
   </div>
 </section>
 
-<!-- ══════════════ 04 · NORTE ══════════════ -->
+<!-- ══════════════ 05 · NORTE ══════════════ -->
 <section id="norte">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Artefato 04 · Complementar</div>
+      <div class="eyebrow">Artefato 05 · Complementar</div>
       <h2>Norte Estratégico</h2>
       <p>A decisão que organiza todas as outras.</p>
     </div>

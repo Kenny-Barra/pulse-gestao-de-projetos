@@ -40,7 +40,7 @@ origem.
 | 📊 **Board visual dos artefatos** (canvas, roadmap e matriz de riscos) | [Abrir board interativo](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) |
 | 🎥 **Vídeo pitch** (até 4 min) | _[colar link do YouTube após a gravação]_ |
 
-O board é uma página web responsiva com tema claro e escuro. As mesmas informações estão nos
+O board reúne os quatro artefatos numa página só, com tema claro e escuro. As mesmas informações estão nos
 documentos deste repositório e nos prints da pasta [`prints/`](prints/), caso o link não abra.
 
 ---
@@ -59,9 +59,10 @@ documentos deste repositório e nos prints da pasta [`prints/`](prints/), caso o
 ├── prints/
 │   ├── 00-board-completo.png          Print do board inteiro
 │   ├── 01-canvas-de-visao.png         Print do Lean Canvas
-│   ├── 02-roadmap.png                 Print do roadmap
-│   ├── 03-matriz-de-riscos.png        Print da matriz de riscos
-│   ├── 04-norte-estrategico.png       Print do norte estratégico
+│   ├── 02-documento-mvp.png           Print do documento de MVP
+│   ├── 03-roadmap.png                 Print do roadmap
+│   ├── 04-matriz-de-riscos.png        Print da matriz de riscos
+│   ├── 05-norte-estrategico.png       Print do norte estratégico
 │   └── tema-claro/                    Mesmos prints em tema claro (para impressão)
 └── enunciado/
     └── TRABALHO - Fundamentos de Gestão de projetos.docx.pdf
@@ -87,9 +88,9 @@ documentos deste repositório e nos prints da pasta [`prints/`](prints/), caso o
 | Artefato obrigatório | Onde está |
 |---|---|
 | Canvas de Visão de Produto (Lean Canvas) | [Board § 01](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) · [print](prints/01-canvas-de-visao.png) |
-| Documento de MVP (funcionalidades, prioridade, critérios de aceitação) | [`docs/02-documento-mvp.md`](docs/02-documento-mvp.md) |
-| Roadmap visual | [Board § 02](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) · [print](prints/02-roadmap.png) |
-| Matriz de Riscos (risco, prob., impacto, mitigação, responsável) | [Board § 03](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) · [`docs/03-matriz-de-riscos.md`](docs/03-matriz-de-riscos.md) · [print](prints/03-matriz-de-riscos.png) |
+| Documento de MVP (funcionalidades, prioridade, critérios de aceitação) | [Board § 02](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) · [`docs/02-documento-mvp.md`](docs/02-documento-mvp.md) · [print](prints/02-documento-mvp.png) |
+| Roadmap visual | [Board § 03](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) · [print](prints/03-roadmap.png) |
+| Matriz de Riscos (risco, prob., impacto, mitigação, responsável) | [Board § 04](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) · [`docs/03-matriz-de-riscos.md`](docs/03-matriz-de-riscos.md) · [print](prints/04-matriz-de-riscos.png) |
 | Prints dos artefatos | [`prints/`](prints/) |
 | Links públicos das ferramentas | seção [Links dos entregáveis](#-links-dos-entregáveis) |
 | README explicando a lógica | este arquivo |
