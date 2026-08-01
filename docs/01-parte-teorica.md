@@ -1,6 +1,6 @@
-# Parte Teórica — Do Problema ao Produto
+# Parte Teórica · Do Problema ao Produto
 
-**Produto:** Pulse — Plataforma de Inteligência de Atendimento com IA Generativa
+**Produto:** Pulse, plataforma de inteligência de atendimento com IA generativa
 **Disciplina:** Fundamentos de Gestão de Projetos
 **Autor:** Kenedy Pereira
 **Data:** Julho de 2026
@@ -23,7 +23,7 @@
 
 Um *startup studio* está incubando um produto digital apoiado em IA Generativa para um cliente
 corporativo. O time interno de atendimento do cliente recebe um volume gigantesco de interações
-— tickets, chats e e-mails — e enfrenta dois problemas encadeados:
+(tickets, chats e e-mails) e enfrenta dois problemas encadeados:
 
 1. **Não consegue priorizar temas críticos.** A análise é feita por amostragem manual, o que gera
    viés de seleção e atraso na detecção de problemas.
@@ -65,7 +65,7 @@ atendimento em insumo de decisão para produto, operações e liderança.
 | Perfil | Papel na decisão | Dor principal | O que o Pulse entrega |
 |---|---|---|---|
 | **Head / Coordenador de CX** | Comprador econômico | Cobrado por CSAT e custo por ticket, mas decide "no achismo" | Priorização defensável, com números e evidência |
-| **Analista de Qualidade / CX Insights** | Usuário primário (diário) | Passa 60–70% do tempo tagueando e montando planilha | Recupera o tempo e vira gerador de insight, não de planilha |
+| **Analista de Qualidade / CX Insights** | Usuário primário (diário) | Passa de 60 a 70% do tempo tagueando e montando planilha | Recupera o tempo e vira gerador de insight, não de planilha |
 | **Product Manager** | Usuário secundário | Backlog cheio, sem sinal confiável do que dói mais | Fila de problemas reais, ligada a volume e receita em risco |
 | **Diretoria / COO** | Patrocinador | Descobre crises tarde demais | Alerta de tema emergente e resumo executivo semanal |
 
@@ -74,17 +74,17 @@ CX de 10 a 200 pessoas, que já usam uma ferramenta de *helpdesk* e possuem algu
 dados. Abaixo desse volume a leitura manual ainda é viável e o produto não se paga.
 
 **Problema atendido, em uma frase:**
-> A empresa já **tem** a resposta para "o que está quebrado" dentro do próprio atendimento — mas
-> ela está diluída em dezenas de milhares de textos que ninguém consegue ler.
+> A empresa já **tem** a resposta para "o que está quebrado" dentro do próprio atendimento. Ela
+> só está diluída em dezenas de milhares de textos que ninguém consegue ler.
 
 **Quantificação da dor (hipótese a validar na descoberta):**
 - Um analista lê ~40 tickets/dia → cobre menos de **3%** do volume de uma operação média.
 - O ciclo "perceber problema → levar para produto" leva **3 a 6 semanas**.
-- Estima-se **15–25% dos tickets** como recorrentes e evitáveis na origem.
+- Estima-se que **15% a 25% dos tickets** sejam recorrentes e evitáveis na origem.
 
 ### 1.3 Proposta de valor
 
-> **"De 100% das conversas com seus clientes para 5 decisões priorizadas — toda segunda-feira,
+> **"De 100% das conversas com seus clientes para 5 decisões priorizadas, toda segunda-feira
 > às 8h, com a evidência anexada."**
 
 Os quatro pilares da proposta de valor:
@@ -97,8 +97,8 @@ Os quatro pilares da proposta de valor:
 | **Ação** | Termina em plano de ação com dono, não em gráfico | % de temas que viram tarefa em ferramenta externa |
 
 **Métrica North Star:** *número de planos de ação executados originados de insights do Pulse por
-mês.* Foi escolhida deliberadamente no lugar de métricas de vaidade (usuários ativos, temas
-gerados) porque só ela captura o valor real: **o produto só vale se mudar o que a empresa faz.**
+mês.* Escolhi esta no lugar de métricas de vaidade (usuários ativos, temas gerados) porque só ela
+captura o valor real: **o produto só vale se mudar o que a empresa faz.**
 
 ---
 
@@ -142,31 +142,31 @@ A priorização combinou **MoSCoW** (para o corte de escopo) com **RICE** (para 
 
 | Funcionalidade | Alcance | Impacto | Confiança | Esforço (sem.) | **RICE** | Decisão |
 |---|---|---|---|---|---|---|
-| F3 Clusterização | 100% | 3,0 | 70% | 6 | **35,0** | Núcleo — é o produto |
-| F4 Painel priorizado | 100% | 3,0 | 90% | 3 | **90,0** | Núcleo — é a entrega de valor |
-| F5 Evidência rastreável | 100% | 2,5 | 90% | 2 | **112,5** | Núcleo — mitiga alucinação |
-| F6 Resumo executivo | 80% | 3,0 | 80% | 3 | **64,0** | Núcleo — cria o hábito semanal |
+| F3 Clusterização | 100% | 3,0 | 70% | 6 | **35,0** | Núcleo: é o produto |
+| F4 Painel priorizado | 100% | 3,0 | 90% | 3 | **90,0** | Núcleo: é a entrega de valor |
+| F5 Evidência rastreável | 100% | 2,5 | 90% | 2 | **112,5** | Núcleo: mitiga alucinação |
+| F6 Resumo executivo | 80% | 3,0 | 80% | 3 | **64,0** | Núcleo: cria o hábito semanal |
 | F1 Ingestão | 100% | 2,0 | 95% | 3 | **63,3** | Pré-requisito técnico |
 | F2 Anonimização | 100% | 2,0 | 95% | 2 | **95,0** | Pré-requisito legal (LGPD) |
 | F7 Feedback | 70% | 1,5 | 85% | 1 | **89,3** | Barato e gera dado de calibração |
-| F8 Exportação | 60% | 1,0 | 90% | 1 | **54,0** | Should — entra se sobrar folga |
-| F9 Alertas | 50% | 2,0 | 60% | 4 | **15,0** | Adiado — depende de baseline histórico |
-| F10 Chat com dados | 40% | 1,5 | 40% | 8 | **3,0** | Adiado — alto custo, valor não provado |
+| F8 Exportação | 60% | 1,0 | 90% | 1 | **54,0** | Should: entra se sobrar folga |
+| F9 Alertas | 50% | 2,0 | 60% | 4 | **15,0** | Adiado: depende de baseline histórico |
+| F10 Chat com dados | 40% | 1,5 | 40% | 8 | **3,0** | Adiado: alto custo, valor não provado |
 
 **Racional das quatro decisões mais relevantes:**
 
 1. **F5 (Evidência) é Must, embora pareça "detalhe de UI".** É a mitigação de produto para o maior
-   risco técnico do projeto — alucinação do LLM. Sem citação verificável, um único insight errado
-   destrói a confiança e o produto morre. É a funcionalidade de maior RICE justamente por ser
-   barata e proteger todo o resto.
+   risco técnico do projeto, que é a alucinação do LLM. Sem citação verificável, um único insight
+   errado destrói a confiança e o produto morre. Ficou com o maior RICE justamente por ser barata
+   e proteger todo o resto.
 2. **F2 (Anonimização) é Must mesmo sem gerar valor percebido.** É requisito legal (LGPD) e
    condição de compra: nenhum jurídico corporativo aprova envio de dado pessoal de cliente para
    API de terceiro sem tratamento. É custo de entrada, não diferencial.
 3. **F9 (Alertas) foi adiado por dependência, não por falta de valor.** Detectar anomalia exige
    *baseline* histórico que só existe depois de meses de uso. Construir antes seria desperdício.
 4. **F10 (Chat com dados) foi adiado por disciplina.** É a funcionalidade que mais impressiona em
-   demo e a que menos resolve o problema declarado do cliente — que é **priorização**, não
-   consulta. Entrou como Won't para evitar que o time construísse a versão bonita em vez da
+   demo e a que menos resolve o problema declarado pelo cliente, que é **priorização** e não
+   consulta. Entrou como Won't para evitar que o time construísse a versão bonita no lugar da
    versão útil.
 
 ### 2.4 Critério de sucesso do MVP
@@ -194,7 +194,7 @@ O roadmap é **orientado a objetivos e a hipóteses**, não a datas fixas de fun
 fase existe para derrubar um risco específico; as datas são estimativas de planejamento, sujeitas
 a revisão ao final de cada fase.
 
-### Fase 1 — Descoberta e MVP *(Meses 1–3)*
+### Fase 1 · Descoberta e MVP *(meses 1 a 3)*
 
 **Objetivo:** provar que a IA classifica temas com precisão aceitável e que o insight gerado é
 percebido como útil.
@@ -215,15 +215,15 @@ agir sem reler os tickets."*
 
 ---
 
-### Fase 2 — Validação e Ação *(Meses 4–6)*
+### Fase 2 · Validação e Ação *(meses 4 a 6)*
 
 **Objetivo:** transformar insight em ação recorrente e provar disposição a pagar.
 **Hipótese sob teste:** *"As empresas pagam por isso e o insight vira mudança operacional."*
 
 | Entregável | Descrição |
 |---|---|
-| Alertas de anomalia | F9 — spike de tema acima do baseline |
-| Integrações de saída | Jira, Slack, Notion — o plano vira tarefa em 1 clique |
+| Alertas de anomalia | F9: spike de tema acima do baseline |
+| Integrações de saída | Jira, Slack e Notion: o plano vira tarefa em 1 clique |
 | Acompanhamento de ação | Status do plano e impacto no volume do tema após a correção |
 | Gestão de taxonomia | Cliente edita, mescla e fixa temas |
 | Multiusuário e permissões | Papéis de admin, analista e leitor |
@@ -234,7 +234,7 @@ mensal ≥ 85%; redução mensurável de volume em ao menos 1 tema por cliente.
 
 ---
 
-### Fase 3 — Escala e Inteligência Preditiva *(Meses 7–12)*
+### Fase 3 · Escala e Inteligência Preditiva *(meses 7 a 12)*
 
 **Objetivo:** escalar a base e aumentar a profundidade analítica, saindo do descritivo para o
 preditivo.
@@ -255,7 +255,7 @@ expansão de receita (NRR) ≥ 110%.
 
 ---
 
-### Fase 4 — Plataforma e Ecossistema *(Mês 13+)*
+### Fase 4 · Plataforma e Ecossistema *(a partir do mês 13)*
 
 **Objetivo:** deixar de ser ferramenta e virar camada de inteligência do cliente.
 **Hipótese sob teste:** *"O valor cresce quando terceiros constroem sobre o Pulse."*
@@ -275,7 +275,7 @@ expansão de receita (NRR) ≥ 110%.
 
 | | Fase 1 | Fase 2 | Fase 3 | Fase 4 |
 |---|---|---|---|---|
-| **Período** | Mês 1–3 | Mês 4–6 | Mês 7–12 | Mês 13+ |
+| **Período** | Mês 1 a 3 | Mês 4 a 6 | Mês 7 a 12 | Mês 13+ |
 | **Foco** | Provar o valor | Provar o negócio | Escalar | Expandir |
 | **Risco atacado** | Técnico | Mercado | Econômico | Estratégico |
 | **Pergunta** | Funciona? | Pagam? | Escala com margem? | Vira plataforma? |
@@ -287,7 +287,7 @@ expansão de receita (NRR) ≥ 110%.
 
 O ciclo de vida adotado é **incremental e iterativo**, com quatro fases e **portões de decisão
 (*gates*)** entre elas. O princípio é que **nenhuma fase avança por prazo cumprido, e sim por
-evidência produzida** — uma fase pode ser repetida quantas vezes for necessário.
+evidência produzida**. Uma fase pode ser repetida quantas vezes for necessário.
 
 ```
 ┌─────────────┐   G1   ┌─────────────┐   G2   ┌─────────────┐   G3   ┌─────────────┐
@@ -350,7 +350,7 @@ produtos de IA.
 | **G4** | Revisão contínua (trimestral) | Precisão mantida ≥ 80%; NRR ≥ 100%; custo unitário estável ou em queda | Investir / Manter / Descontinuar |
 
 **Regra de governança:** o *gate* é avaliado em reunião formal com PM, tech lead e patrocinador,
-com decisão registrada. Critério não atendido **não é negociado com prazo** — ou o time itera na
+com decisão registrada. Critério não atendido **não é negociado com prazo**: ou o time itera na
 fase atual, ou a decisão de avançar é assumida explicitamente como risco documentado, com
 responsável nomeado.
 
@@ -368,13 +368,13 @@ a uma **estratégia de resposta** e a um **responsável**.
 
 | Nível | Probabilidade | Impacto |
 |---|---|---|
-| 1 – Muito baixa/o | < 10% | Efeito desprezível |
-| 2 – Baixa/o | 10–30% | Atraso ≤ 1 semana |
-| 3 – Média/o | 30–60% | Atraso de 2–4 semanas ou perda de 1 piloto |
-| 4 – Alta/o | 60–85% | Atraso > 1 mês ou falha em *gate* |
-| 5 – Muito alta/o | > 85% | Inviabiliza o produto |
+| 1 · Muito baixa/o | < 10% | Efeito desprezível |
+| 2 · Baixa/o | 10 a 30% | Atraso ≤ 1 semana |
+| 3 · Média/o | 30 a 60% | Atraso de 2 a 4 semanas ou perda de 1 piloto |
+| 4 · Alta/o | 60 a 85% | Atraso > 1 mês ou falha em *gate* |
+| 5 · Muito alta/o | > 85% | Inviabiliza o produto |
 
-**Exposição = Probabilidade × Impacto.** Classificação: 1–6 Baixo · 8–12 Médio · 15–25 Crítico.
+**Exposição = Probabilidade × Impacto.** Classificação: 1 a 6 Baixo · 8 a 12 Médio · 15 a 25 Crítico.
 **Estratégias de resposta a ameaças:** Mitigar, Evitar, Transferir, Aceitar.
 
 ### 5.2 Matriz de riscos
@@ -407,7 +407,7 @@ a uma **estratégia de resposta** e a um **responsável**.
 | **P=2** | | | R15 | R12, R14 | |
 | **P=1** | | | | | |
 
-🔴 Crítico (≥15) · 🟠 Médio (8–12) · 🟢 Baixo (≤6)
+🔴 Crítico (≥15) · 🟠 Médio (8 a 12) · 🟢 Baixo (≤6)
 
 ### 5.4 Governança de riscos
 
@@ -446,9 +446,9 @@ a carregar incerteza maior, o que exige *timeboxes* de pesquisa em vez de estima
 
 **Ética**
 
-1. **Não-vigilância — restrição de produto assumida.** O Pulse analisa **temas**, não pessoas. Não
-   produz ranking de desempenho individual de atendentes, mesmo sendo tecnicamente trivial. É uma
-   decisão de produto: viabilizaria uso punitivo, destruiria a confiança dos analistas (R09) e
+1. **Não-vigilância, assumida como restrição de produto.** O Pulse analisa **temas**, não pessoas.
+   Não produz ranking de desempenho individual de atendentes, mesmo sendo tecnicamente trivial.
+   A razão é de produto: viabilizaria uso punitivo, destruiria a confiança dos analistas (R09) e
    traria exposição trabalhista ao cliente.
 2. **Transparência.** Todo conteúdo gerado por IA é rotulado como tal na interface. O usuário
    sempre sabe o que é dado e o que é inferência.
@@ -466,7 +466,7 @@ a carregar incerteza maior, o que exige *timeboxes* de pesquisa em vez de estima
 4. **Criptografia** em trânsito e em repouso; retenção configurável com exclusão sob demanda.
 5. **Trilha de auditoria:** registro de quem acessou qual insight e quando.
 6. **Defesa contra injeção de *prompt*:** o conteúdo de tickets é tratado como **dado, nunca como
-   instrução** — um cliente mal-intencionado poderia escrever comandos dentro de um ticket.
+   instrução**, já que um cliente mal-intencionado pode escrever comandos dentro de um ticket.
 
 **Confiabilidade**
 
@@ -493,28 +493,28 @@ a carregar incerteza maior, o que exige *timeboxes* de pesquisa em vez de estima
 
 - Novos papéis: engenharia de IA/dados e responsabilidade explícita por avaliação de qualidade.
 - Nova disciplina: **AI evals** entram no fluxo como testes de primeira classe.
-- Nova estrutura de custo: parte do custo migra de fixo (infra) para variável (inferência),
-  afetando precificação — cobrança por licença pura é arriscada; adota-se modelo híbrido com faixa
-  de volume.
+- Nova estrutura de custo: parte do custo migra de fixo (infra) para variável (inferência), o que
+  afeta a precificação. Cobrança por licença pura é arriscada, então adota-se modelo híbrido com
+  faixa de volume.
 
 **Riscos de mudança organizacional e resposta**
 
-O maior risco de adoção não é técnico, é humano (R05 e R09). A resposta de gestão adotada é:
-envolver os analistas como **cocriadores** desde a descoberta; declarar formalmente o não-uso para
-avaliação individual; e medir o sucesso pela **ação executada**, não pelo acesso à ferramenta —
-garantindo que o produto seja avaliado por mudar o comportamento da organização, e não por
-existir.
+O maior risco de adoção não está na tecnologia, está nas pessoas (R05 e R09). A resposta de gestão adotada tem
+três frentes: envolver os analistas como **cocriadores** desde a descoberta; declarar formalmente
+o não-uso para avaliação individual; e medir o sucesso pela **ação executada** em vez do acesso à
+ferramenta. Assim o produto passa a ser avaliado por mudar o comportamento da organização, em vez
+de simplesmente existir.
 
 ---
 
 ## 7. Referências
 
-- **PMI — Project Management Institute.** *A Guide to the Project Management Body of Knowledge
-  (PMBOK® Guide)* — conceitos de gerenciamento de riscos, ciclo de vida e governança de projetos.
+- **PMI (Project Management Institute).** *A Guide to the Project Management Body of Knowledge
+  (PMBOK® Guide)*: conceitos de gerenciamento de riscos, ciclo de vida e governança de projetos.
   https://www.pmi.org
-- **Schwaber, K.; Sutherland, J.** *The Scrum Guide* (2020) — entrega incremental, valor e ciclos
+- **Schwaber, K.; Sutherland, J.** *The Scrum Guide* (2020): entrega incremental, valor e ciclos
   curtos. https://scrumguides.org
 - **Conteúdo da disciplina** *Fundamentos de Gestão de Projetos*: visão de produto, MVP, roadmap,
   ciclo de vida, riscos e gestão de produtos com IA.
-- **Maurya, A.** *Running Lean* — Lean Canvas e validação de hipóteses de negócio.
-- **Ries, E.** *The Lean Startup* — ciclo construir–medir–aprender e definição de MVP.
+- **Maurya, A.** *Running Lean*: Lean Canvas e validação de hipóteses de negócio.
+- **Ries, E.** *The Lean Startup*: ciclo construir, medir e aprender, e definição de MVP.

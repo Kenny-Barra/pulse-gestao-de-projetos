@@ -1,4 +1,4 @@
-# Pulse — Planejamento de um Produto Digital com IA
+# Pulse · Planejamento de um Produto Digital com IA
 
 **Do Problema ao Produto: Planejamento de um Produto Digital com IA, MVP e Roadmap**
 
@@ -10,26 +10,26 @@ Trabalho da disciplina **Fundamentos de Gestão de Projetos**
 ## O que é este repositório
 
 Este repositório contém o **planejamento estratégico completo** de um produto digital apoiado em
-IA generativa — não a sua implementação em código. O trabalho simula a rotina real de um Product
+IA generativa. Não é a implementação em código. O trabalho simula a rotina real de um Product
 Manager / Project Manager em um *startup studio*: transformar um problema mal definido de cliente
 em visão de produto, escopo de MVP, roadmap por fases, ciclo de vida com portões de decisão e
 matriz de riscos com donos nomeados.
 
 ### O problema do cliente
 
-Um time interno de atendimento recebe volumes gigantescos de interações — tickets, chats e
-e-mails — e não consegue priorizar temas críticos nem gerar planos de ação rápidos. A informação
+Um time interno de atendimento recebe volumes gigantescos de interações (tickets, chats e
+e-mails) e não consegue priorizar temas críticos nem gerar planos de ação rápidos. A informação
 sobre o que está quebrado no produto **já existe** dentro dessas conversas; ela só não é legível
 em escala humana.
 
 ### A solução planejada
 
-**Pulse** — plataforma SaaS que processa 100% das interações de atendimento e devolve temas
+**Pulse**, plataforma SaaS que processa 100% das interações de atendimento e devolve temas
 priorizados, resumo executivo semanal e plano de ação com evidência rastreável até o ticket de
 origem.
 
-> **Proposta de valor:** de 100% das conversas com seus clientes para 5 decisões priorizadas —
-> toda segunda-feira, às 8h, com a evidência anexada.
+> **Proposta de valor:** de 100% das conversas com seus clientes para 5 decisões priorizadas,
+> toda segunda-feira às 8h, com a evidência anexada.
 
 ---
 
@@ -71,18 +71,18 @@ documentos deste repositório e nos prints da pasta [`prints/`](prints/), caso o
 
 ## Mapa dos requisitos → onde está cada coisa
 
-### Entregável 1 — Parte Teórica (1,5 pts)
+### Entregável 1 · Parte Teórica (1,5 pts)
 
 | Requisito do enunciado | Onde está |
 |---|---|
 | 1.1 Visão de Produto | [`docs/01-parte-teorica.md` § 1](docs/01-parte-teorica.md#1-visão-de-produto) |
 | 1.2 Definição do MVP | [`docs/01-parte-teorica.md` § 2](docs/01-parte-teorica.md#2-definição-do-mvp) |
-| 1.3 Roadmap (mín. 3 fases) | [§ 3](docs/01-parte-teorica.md#3-roadmap-do-produto) — **4 fases entregues** |
-| 1.4 Ciclo de Vida | [§ 4](docs/01-parte-teorica.md#4-ciclo-de-vida-da-aplicação) — 4 fases + 4 *gates* |
-| 1.5 Gerenciamento de Riscos (mín. 5) | [§ 5](docs/01-parte-teorica.md#5-gerenciamento-de-riscos) — **15 riscos mapeados** |
+| 1.3 Roadmap (mín. 3 fases) | [§ 3](docs/01-parte-teorica.md#3-roadmap-do-produto) · **4 fases entregues** |
+| 1.4 Ciclo de Vida | [§ 4](docs/01-parte-teorica.md#4-ciclo-de-vida-da-aplicação) · 4 fases e 4 *gates* |
+| 1.5 Gerenciamento de Riscos (mín. 5) | [§ 5](docs/01-parte-teorica.md#5-gerenciamento-de-riscos) · **15 riscos mapeados** |
 | 1.6 Gestão de Produtos e IA | [§ 6](docs/01-parte-teorica.md#6-gestão-de-produtos-e-ia) |
 
-### Entregável 2 — Parte Prática (3,5 pts)
+### Entregável 2 · Parte Prática (3,5 pts)
 
 | Artefato obrigatório | Onde está |
 |---|---|
@@ -94,7 +94,7 @@ documentos deste repositório e nos prints da pasta [`prints/`](prints/), caso o
 | Links públicos das ferramentas | seção [Links dos entregáveis](#-links-dos-entregáveis) |
 | README explicando a lógica | este arquivo |
 
-### Entregável 3 — Vídeo Pitch (2,0 pts)
+### Entregável 3 · Vídeo Pitch (2,0 pts)
 
 Vídeo de até 4 minutos defendendo o projeto, cobrindo os seis pontos exigidos: contexto do
 problema, visão do produto, MVP proposto, roadmap, principais riscos e mitigação, e justificativa
@@ -106,7 +106,7 @@ estratégica das decisões tomadas.
 
 ## A lógica do planejamento
 
-Esta seção explica **por que** os artefatos têm a forma que têm — é a linha de raciocínio que
+Esta seção explica **por que** os artefatos têm a forma que têm. É a linha de raciocínio que
 conecta os três entregáveis.
 
 ### 1. Tudo parte de uma métrica, não de uma funcionalidade
@@ -114,13 +114,13 @@ conecta os três entregáveis.
 A primeira decisão foi escolher a métrica North Star: **número de planos de ação executados por
 mês**. Não usuários ativos, não temas gerados, não tickets processados.
 
-A escolha é deliberada e restritiva. Um produto de análise pode ter engajamento alto e valor zero
-— basta que as pessoas olhem os gráficos e não mudem nada. Ao medir **ação executada**, o produto
+A escolha é restritiva de propósito. Um produto de análise pode ter engajamento alto e valor zero:
+basta que as pessoas olhem os gráficos e não mudem nada. Ao medir **ação executada**, o produto
 só pontua quando altera o comportamento da organização.
 
-Essa escolha define tudo o que vem depois: o MVP prioriza o que gera ação, o roadmap sequencia
-por remoção de risco à ação, e a matriz de riscos trata "insight que não vira ação" (R05) como
-risco **crítico**, e não como problema de adoção a resolver depois.
+Essa escolha define tudo o que vem depois. O MVP prioriza o que gera ação, o roadmap sequencia
+por remoção de risco à ação, e a matriz de riscos classifica "insight que não vira ação" (R05) como
+risco **crítico**, em vez de tratá-lo como problema de adoção a resolver depois.
 
 ### 2. O MVP responde a uma pergunta, não entrega um pacote
 
@@ -129,18 +129,18 @@ O MVP foi desenhado ao redor de uma única hipótese falsificável:
 > *Um líder de CX confia no ranking automático de temas a ponto de decidir sem reler os tickets?*
 
 Isso permitiu cortar escopo sem culpa. O que ficou de fora está **documentado explicitamente**
-como escopo negativo — inclusive o chat conversacional com os dados, que é a funcionalidade que
+como escopo negativo, inclusive o chat conversacional com os dados. Essa é a funcionalidade que
 mais impressiona em demonstração e a que menos resolve o problema declarado do cliente.
 
 A priorização usou **MoSCoW** para o corte de escopo e **RICE** para ordenar dentro do essencial.
-O resultado tem uma inversão que vale notar: a funcionalidade de maior pontuação **não é a
-inteligência artificial** — é a *evidência rastreável* (RICE 112,5), porque é barata de construir
-e protege todo o resto do produto contra o risco de alucinação.
+O resultado trouxe uma inversão: a maior pontuação **não ficou com a inteligência artificial**.
+Ficou com a *evidência rastreável* (RICE 112,5), que é barata de construir e protege todo o resto
+do produto contra o risco de alucinação.
 
 ### 3. Cada fase do roadmap existe para matar um risco
 
-O roadmap não é uma lista de funcionalidades distribuídas no tempo. Cada fase carrega **uma
-pergunta** e **um tipo de risco**:
+O roadmap deixou de ser uma lista de funcionalidades distribuídas no tempo. Cada fase carrega
+**uma pergunta** e **um tipo de risco**:
 
 | Fase | Pergunta | Risco atacado |
 |---|---|---|
@@ -150,7 +150,7 @@ pergunta** e **um tipo de risco**:
 | 4 · Plataforma | Vira plataforma? | Estratégico |
 
 Consequência prática: as datas são estimativas negociáveis, mas os **critérios de passagem entre
-fases não são**. Uma fase não avança por prazo cumprido — avança por evidência produzida.
+fases não são**. Uma fase não avança por prazo cumprido. Avança por evidência produzida.
 
 ### 4. Os riscos de IA são de natureza diferente
 
@@ -166,18 +166,17 @@ Produto com IA generativa não é. Isso muda a gestão em três pontos concretos
   resumo executivo.
 
 Por isso a *Definition of Done* de qualquer funcionalidade de IA neste planejamento inclui
-**métrica de qualidade medida** — não basta "está em produção".
+**métrica de qualidade medida**. Não basta dizer que está em produção.
 
 ### 5. Uma restrição ética assumida como decisão de produto
 
 O Pulse analisa **temas, não pessoas**. Não produz ranking de desempenho individual de
 atendentes, embora fosse tecnicamente trivial.
 
-É uma restrição permanente, não uma limitação temporária de escopo. Viabilizar uso punitivo
+A restrição é permanente. Não se trata de um corte temporário de escopo. Viabilizar uso punitivo
 destruiria a confiança do time que usa a ferramenta todos os dias (risco R09) e traria exposição
-trabalhista ao cliente. Aparece no canvas como **vantagem competitiva**, porque é exatamente isso:
-uma escolha que compra confiança e que o concorrente teria dificuldade de copiar sem abrir mão de
-uma funcionalidade vendável.
+trabalhista ao cliente. Ela aparece no canvas como **vantagem competitiva** justamente por isso:
+compra confiança, e o concorrente só copia abrindo mão de uma funcionalidade vendável.
 
 ---
 
@@ -188,26 +187,25 @@ uma funcionalidade vendável.
 Nove blocos numerados na ordem canônica de preenchimento (Problema → Segmentos → Proposta de Valor
 → Solução → Canais → Receita → Custos → Métricas → Vantagem). **Leia o bloco central primeiro**:
 a proposta de valor única é a origem de todas as decisões dos outros dois artefatos. Os blocos de
-Custos e Receita estão na base porque o modelo econômico é, neste produto, uma restrição de
-projeto — não um detalhe comercial.
+Custos e Receita estão na base porque neste produto o modelo econômico funciona como restrição
+de projeto, não como detalhe comercial.
 
 ### Roadmap
 
 Leia cada coluna de cima para baixo: **pergunta da fase → hipótese sob teste → entregáveis →
 métricas-alvo → risco atacado**. Abaixo das quatro fases estão os *gates* (G1 a G4) com os
-critérios objetivos de passagem. A régua de avaliação do roadmap não são as datas — são os gates.
+critérios objetivos de passagem. A régua de avaliação do roadmap são os gates, não as datas.
 
 ### Matriz de Riscos
 
 - **Exposição = Probabilidade × Impacto**, ambas em escala de 1 a 5.
-- 🔴 Crítico (15–25) · 🟠 Médio (8–12) · 🟢 Baixo (1–6).
+- 🔴 Crítico (15 a 25) · 🟠 Médio (8 a 12) · 🟢 Baixo (1 a 6).
 - O **mapa de calor** mostra a distribuição; a **tabela** traz mitigação e responsável.
-- A concentração no canto superior direito é *diagnóstica, não um defeito de planejamento*: os
-  riscos de maior exposição (R01, R02, R04) são inerentes ao uso de IA generativa. É por isso que
-  as funcionalidades que os mitigam foram alocadas para a **semana 1**, e não distribuídas ao
-  longo do cronograma.
-- Cada risco crítico tem um **gatilho numérico** com contingência automática — não depende de
-  alguém perceber que está dando errado.
+- Os riscos de maior exposição ficaram concentrados no canto superior direito porque R01, R02 e
+  R04 são inerentes ao uso de IA generativa. Por isso as funcionalidades que os mitigam foram
+  alocadas para a **semana 1**, em vez de ficarem espalhadas pelo cronograma.
+- Cada risco crítico tem um **gatilho numérico** com contingência automática, que dispensa alguém
+  perceber que está dando errado.
 
 ---
 
@@ -226,19 +224,19 @@ critérios objetivos de passagem. A régua de avaliação do roadmap não são a
 
 ## Fontes de pesquisa
 
-- **PMI — Project Management Institute.** *PMBOK® Guide* — gerenciamento de riscos, ciclo de vida
+- **PMI (Project Management Institute).** *PMBOK® Guide*: gerenciamento de riscos, ciclo de vida
   e governança. https://www.pmi.org
-- **Schwaber, K.; Sutherland, J.** *The Scrum Guide* (2020) — entrega incremental e ciclos curtos.
+- **Schwaber, K.; Sutherland, J.** *The Scrum Guide* (2020): entrega incremental e ciclos curtos.
   https://scrumguides.org
-- **Conteúdo da disciplina** *Fundamentos de Gestão de Projetos* — visão de produto, MVP, roadmap,
+- **Conteúdo da disciplina** *Fundamentos de Gestão de Projetos*: visão de produto, MVP, roadmap,
   ciclo de vida, riscos e gestão de produtos com IA.
-- **Maurya, A.** *Running Lean* — Lean Canvas e validação de hipóteses.
-- **Ries, E.** *The Lean Startup* — ciclo construir–medir–aprender.
+- **Maurya, A.** *Running Lean*: Lean Canvas e validação de hipóteses.
+- **Ries, E.** *The Lean Startup*: ciclo construir, medir e aprender.
 
 ---
 
 ## Visualizar o board localmente
 
-O arquivo [`artefatos/board.html`](artefatos/board.html) é autocontido — sem dependências
+O arquivo [`artefatos/board.html`](artefatos/board.html) é autocontido, sem dependências
 externas. Basta abri-lo em qualquer navegador. Ele acompanha o tema do sistema (claro ou escuro)
 e possui folha de estilo de impressão para gerar PDF via `Ctrl + P`.

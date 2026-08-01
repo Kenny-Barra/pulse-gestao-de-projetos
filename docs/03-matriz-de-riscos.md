@@ -1,7 +1,7 @@
-# Matriz de Riscos — Pulse
+# Matriz de Riscos · Pulse
 
 **Artefato obrigatório da Parte Prática**
-**Produto:** Pulse — Plataforma de Inteligência de Atendimento com IA Generativa
+**Produto:** Pulse, plataforma de inteligência de atendimento com IA generativa
 **Versão:** 1.0 · **Autor:** Kenedy Pereira · **Data:** Julho de 2026
 **Metodologia:** Análise qualitativa de riscos (PMI / PMBOK® Guide)
 **Cadência de revisão:** quinzenal para riscos críticos · completa a cada *gate*
@@ -15,9 +15,9 @@
 | Nível | Classificação | Faixa | Interpretação prática |
 |:---:|---|---|---|
 | 1 | Muito baixa | < 10% | Improvável no horizonte do projeto |
-| 2 | Baixa | 10–30% | Já aconteceu em projetos similares, mas é exceção |
-| 3 | Média | 30–60% | Razoavelmente esperado |
-| 4 | Alta | 60–85% | Provável — planejar assumindo que ocorrerá |
+| 2 | Baixa | 10 a 30% | Já aconteceu em projetos similares, mas é exceção |
+| 3 | Média | 30 a 60% | Razoavelmente esperado |
+| 4 | Alta | 60 a 85% | Provável. Planejar assumindo que vai ocorrer |
 | 5 | Muito alta | > 85% | Praticamente certo |
 
 ### Impacto
@@ -36,9 +36,9 @@
 
 | Faixa | Nível | Tratamento exigido |
 |:---:|---|---|
-| 15 – 25 | 🔴 **Crítico** | Plano de mitigação ativo, dono nomeado e revisão quinzenal obrigatória |
-| 8 – 12 | 🟠 **Médio** | Plano definido, monitorado a cada *gate* |
-| 1 – 6 | 🟢 **Baixo** | Aceito e monitorado, sem ação preventiva dedicada |
+| 15 a 25 | 🔴 **Crítico** | Plano de mitigação ativo, dono nomeado e revisão quinzenal obrigatória |
+| 8 a 12 | 🟠 **Médio** | Plano definido, monitorado a cada *gate* |
+| 1 a 6 | 🟢 **Baixo** | Aceito e monitorado, sem ação preventiva dedicada |
 
 ### Estratégias de resposta
 
@@ -63,7 +63,7 @@
 | **R03** | Vazamento ou uso indevido de dado pessoal de clientes finais (LGPD) | Conformidade | 3 | 5 | **15** | Mitigar + Transferir | Anonimização de PII antes de qualquer inferência (F2), com bloqueio em caso de falha do sanitizador; cláusula contratual de não-treinamento com o fornecedor de LLM; DPA assinado; criptografia em trânsito e repouso; revisão jurídica antes do primeiro piloto; seguro de responsabilidade cibernética | DPO + PM |
 | **R05** | Baixa adoção: o insight é lido, mas não se converte em ação | Mercado / Produto | 3 | 5 | **15** | Mitigar | *Onboarding* assistido nas 4 primeiras semanas; ritual semanal de revisão conduzido junto ao cliente; integração de 1 clique com Jira/Slack para converter insight em tarefa; North Star medindo **ação executada**, não acesso à ferramenta | PM |
 
-### 🟠 Riscos médios (exposição 8 – 12)
+### 🟠 Riscos médios (exposição de 8 a 12)
 
 | ID | Risco | Categoria | P | I | Exp. | Estratégia | Plano de mitigação | Responsável |
 |:---:|---|---|:---:|:---:|:---:|---|---|---|
@@ -95,20 +95,19 @@
 | **P=2** | 🟢 | 🟢 | 🟢 **R15** | 🟠 **R12 · R14** | 🟠 |
 | **P=1** | 🟢 | 🟢 | 🟢 | 🟢 | 🟠 |
 
-**Distribuição:** 5 riscos críticos · 9 médios · 1 baixo — **15 riscos mapeados**.
+**Distribuição:** 5 riscos críticos, 9 médios e 1 baixo, totalizando **15 riscos mapeados**.
 
-**Leitura do mapa:** a concentração no quadrante superior direito é esperada e diagnóstica — os
-riscos de maior exposição (R01, R02, R04) são **técnicos e inerentes ao uso de IA generativa**,
-não falhas de planejamento. Isso justifica a decisão de estrutura do MVP: as três funcionalidades
-que os mitigam (F3, F5 e a medição de custo) foram alocadas para começar na **semana 1**, e não
-distribuídas ao longo do cronograma.
+**Leitura do mapa:** a concentração no quadrante superior direito era esperada. Os riscos de maior
+exposição (R01, R02 e R04) são **técnicos e inerentes ao uso de IA generativa**, em vez de falhas
+de planejamento. Isso explica a estrutura do MVP: as três funcionalidades que os mitigam (F3, F5 e
+a medição de custo) começam na **semana 1**, sem ficarem espalhadas pelo cronograma.
 
 ---
 
 ## 4. Gatilhos e planos de contingência
 
 Cada risco crítico possui um **gatilho mensurável**. Ao ser atingido, o plano de contingência é
-acionado automaticamente — sem nova rodada de discussão.
+acionado automaticamente, sem nova rodada de discussão.
 
 | ID | Gatilho (métrica observável) | Contingência acionada | Prazo de resposta |
 |:---:|---|---|---|
@@ -125,7 +124,7 @@ acionado automaticamente — sem nova rodada de discussão.
 ## 5. Reservas e governança
 
 **Reserva de contingência de cronograma:** 3 semanas/dev (12,5% da capacidade da Fase 1),
-alocadas nominalmente para **R01** e **R06** — os dois riscos com maior probabilidade de consumir
+alocadas nominalmente para **R01** e **R06**, os dois riscos com maior probabilidade de consumir
 tempo não planejado.
 
 **Rotina de governança:**
@@ -137,8 +136,8 @@ tempo não planejado.
 | Auditoria de conformidade e viés | Trimestral | DPO, PM, Tech Lead de IA | Relatório de PII, viés e *drift* |
 
 **Regra de aceitação de risco:** nenhum risco crítico pode ser aceito informalmente. A aceitação
-exige registro escrito com justificativa, responsável nomeado e data de reavaliação — caso
-contrário, o risco permanece com mitigação ativa.
+exige registro escrito com justificativa, responsável nomeado e data de reavaliação. Sem isso,
+o risco permanece com mitigação ativa.
 
-**Regra de propriedade:** todo risco tem **um único responsável nomeado**. Risco com dono
-coletivo é risco sem dono.
+**Regra de propriedade:** todo risco tem **um único responsável nomeado**. Quando o dono é o time
+inteiro, na prática ninguém assume.
