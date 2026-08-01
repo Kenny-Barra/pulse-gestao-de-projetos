@@ -38,7 +38,7 @@ origem.
 | Entregável | Link |
 |---|---|
 | 📊 **Board visual dos artefatos** (canvas, roadmap e matriz de riscos) | [Abrir board interativo](https://claude.ai/code/artifact/d97c4252-b307-4b16-913d-e1fc83636114) |
-| 🎥 **Vídeo pitch** (até 4 min) | _[colar link do YouTube após a gravação]_ |
+| 🎥 **Vídeo pitch** (até 4 min) | _[Acessar vídeo pitch](https://youtu.be/LuolamCG-x8)_ |
 
 O board reúne os quatro artefatos numa página só, com tema claro e escuro. As mesmas informações estão nos
 documentos deste repositório e nos prints da pasta [`prints/`](prints/), caso o link não abra.
@@ -101,7 +101,7 @@ Vídeo de até 4 minutos defendendo o projeto, cobrindo os seis pontos exigidos:
 problema, visão do produto, MVP proposto, roadmap, principais riscos e mitigação, e justificativa
 estratégica das decisões tomadas.
 
-**Link:** _[colar link do YouTube após a gravação]_
+**Link:** _[Acessar vídeo pitch](https://youtu.be/LuolamCG-x8)_
 
 ---
 
